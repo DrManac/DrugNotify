@@ -7,6 +7,9 @@
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
+    "plugins": [
+      "@notifee/react-native"
+    ],
     "splash": {
       "image": "./assets/images/splash.png",
       "resizeMode": "contain",
@@ -19,13 +22,15 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "drugnotify.app"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "drugnotify.app"
     },
     "web": {
       "favicon": "./assets/images/favicon.png"
